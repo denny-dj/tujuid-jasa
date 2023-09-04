@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-use File;
-use Auth;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Auth;
 use Alert;
 
 use App\Models\User;

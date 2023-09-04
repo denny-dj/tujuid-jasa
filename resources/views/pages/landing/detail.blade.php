@@ -38,7 +38,7 @@
 
                         <div class="flex mt-2 flex-nowrap">
                             @forelse ($thumbnail as $item)
-                                <img :class="{ 'border-4 border-serv-button': active === {{ $item->id }} }" @click="changeThumbnail('{{ url(Storage::url($item->thumbnail)) }}', {{ $item->id }})" src="{{ url(Storage::url($item->thumbnail)) }}" alt="thumbnail service" class="inline-block mr-2 rounded-lg cursor-pointer h-20 w-36 object-cover">
+                                <img :class="{ 'border-4 border-serv-button': active === {{ $item->id }} }" @click="changeThumbnail"('{{ url(Storage::url($item->thumbnail)) }}', {{ $item->id }})" src="{{ url(Storage::url($item->thumbnail)) }}" alt="thumbnail service" class="inline-block mr-2 rounded-lg cursor-pointer h-20 w-36 object-cover">
                             @empty
                                 {{-- empty --}}
                             @endforelse
@@ -90,7 +90,7 @@
                                             <svg class="w-20 h-20 object-cover rounded-full text-gray-300" fill="currentColor" viewBox="0 0 24 24">
                                                 <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
                                             </svg>
-                                        @endif
+                                        @endif 
 
                                     </div>
                                     <div class="flex-grow p-4 -mt-8 leading-8 lg:mt-0">

@@ -10,13 +10,12 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
 
-use File;
-use Auth;
 
 use App\Models\Order;
 use App\Models\Service;
 use App\Models\User;
 use App\Models\OrderStatus;
+use Illuminate\Support\Facades\Auth;
 
 class RequestController extends Controller
 {
