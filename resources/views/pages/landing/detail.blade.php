@@ -38,7 +38,7 @@
 
                         <div class="flex mt-2 flex-nowrap">
                             @forelse ($thumbnail as $item)
-                                <img :class="{ 'border-4 border-serv-button': active === {{ $item->id }} }" @click="changeThumbnail"('{{ url(Storage::url($item->thumbnail)) }}', {{ $item->id }})" src="{{ url(Storage::url($item->thumbnail)) }}" alt="thumbnail service" class="inline-block mr-2 rounded-lg cursor-pointer h-20 w-36 object-cover">
+                                <img :class="{ 'border-4 border-serv-button': active === {{ $item->id }} }" @click="changeThumbnail('{{ url(Storage::url($item->thumbnail)) }}', {{ $item->id }})" src="{{ url(Storage::url($item->thumbnail)) }}" alt="thumbnail service" class="inline-block mr-2 rounded-lg cursor-pointer h-20 w-36 object-cover">
                             @empty
                                 {{-- empty --}}
                             @endforelse

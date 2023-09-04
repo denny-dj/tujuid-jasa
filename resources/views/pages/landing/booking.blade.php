@@ -62,7 +62,7 @@
                         <use xlink:href="#image0" transform="scale(0.002)"/>
                     </pattern>
                     <!-- Gambar kiri -->
-                    <image id="image0" width="500" height="500" xlink:href="https://randomuser.me/api/portraits/men/40.jpg"/>
+                    <image id="image0" width="500" height="500" xlink:href="https://randomuser.me/api/portraits/men/40.jpg"/> 
                     <!-- Gambar kanan -->
                     <image id="image1" width="500" height="500" xlink:href="https://randomuser.me/api/portraits/men/97.jpg"/>
                 </defs>
